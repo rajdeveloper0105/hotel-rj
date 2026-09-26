@@ -311,7 +311,7 @@ function Workspace({ onLogout }: { onLogout: () => void }) {
         "\ufeff" +
           rows
             .map((row) =>
-              row.map((v) => `"${String(v).replaceAll('"', '""')}"`).join(","),
+              row.map((v) => `"${String(v).replaceAll()}"`).join(","),
             )
             .join("\r\n"),
       ],
